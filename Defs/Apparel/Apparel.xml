@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelBase">
+    <defName>Apparel_BeltOfHolding</defName>
+    <label>belt of holding (demo object)</label>
+    <description>A belt that magically stores your inventory at reduced mass.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShieldBelt/ShieldBelt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <EquipDelay>2</EquipDelay>
+      <InventoryMassReductionOffset>0.4</InventoryMassReductionOffset>
+    </statBases>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+      <tags>
+        <li>BeltDefense</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+  <ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>Apparel_RealPowerArmor</defName>
+    <label>real powered armor (demo object)</label>
+  <description>A suit of powered armor that doesn't encumber the user and can help carry heavy objects.</description>
+    <statBases>
+      <GearMass>0</GearMass>
+      <CarryMassOffset>50</CarryMassOffset>
+    </statBases>
+    <apparel>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+      </tags>
+    </apparel>
+  </ThingDef>
+  
+
+</Defs>
